@@ -1,0 +1,138 @@
+body {
+	font-family: arial;
+	background-color: grey;
+	/*font-weight:bold;*/
+	color: white;
+	counter-reset: number
+}
+
+textarea {
+	background-color: #000080;
+	color: white;
+}
+
+table {
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0 0 0 30px;
+	border: 1px solid white;
+	position: absolute;
+	left: 300px;
+	top: 250px;
+	visibility: hidden;
+}
+
+.messages {
+	background-color: #000080;
+	color: white;
+	width: 570px;
+	font: bold .875em Calibri, Arial;
+}
+
+.messages a {
+	text-decoration: none;
+}
+
+.messages a:hover {
+	background-color: #990000;
+}
+
+.messages a:link {
+	color: yellow;
+}
+
+.messages a:visited {
+	color: #00ff66;
+}
+
+.CReceiver {
+	visibility: hidden
+}
+
+.invis {
+	display: inline;
+	color: grey;
+}
+
+.red {
+	display: inline;
+	color: #990000;
+}
+.yellow {
+	display: inline;
+	color: yellow;
+}
+
+.darkblue {
+	display: inline;
+	color: darkblue;
+}
+
+.ms {
+	position: absolute; !
+	margin: 1cm; !
+	background-color: #99FF99;
+	width: 200px;
+	border: 0px solid; !
+	margin: 0px 0px 0px 0px;
+	top: 20px;
+	left: 700px;
+}
+
+div.kreisg {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: grey;
+	margin: 10px;
+	counter-decrement: number -1;
+}
+
+div.kreisDisabled {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #c0c0c0;
+	margin: 10px;
+	counter-decrement: number -1;
+}
+
+div.kreis {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	/*background-color: #000080;*/
+	background-color: #c0c0c0;
+	margin: 10px;
+	counter-increment: number;
+}
+
+div.kreis::after {
+	content: counter(number);
+	position: relative;
+	color: white;
+	width: 100%;
+	text-align: center;
+	top: 43px;
+	left: 43px;
+}
+/*
+div.kreis:hover {
+  background-color: red;
+}
+*/
+.invis {
+	display: inline;
+	color: grey;
+}
+
+.ms {
+	position: absolute; !
+	margin: 1cm; !
+	background-color: #99FF99;
+	width: 200px;
+	border: 0px solid; !
+	margin: 0px 0px 0px 0px;
+	top: 20px;
+	left: 500px;
+}

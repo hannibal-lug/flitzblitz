@@ -1,0 +1,200 @@
+body {
+	background-color: grey;
+	color: white;
+}
+
+input[type="text"],
+textarea {
+	background-color: #000080;
+	color: white;
+}
+
+
+table {
+	border-spacing: 0px;
+	padding: 0px;
+	/*margin: 0 0 0 30px;*/
+	border: 1px solid white
+}
+
+.tableTo {
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0 0 0 30px;
+	border: 1px solid white;
+	position: absolute;
+	left: 300px;
+	top: 250px;
+	visibility: hidden;
+}
+/*
+.cmod{
+	counter-reset: number 12
+}
+*/
+.show {
+	position: relative;
+	top: 42px;
+	left: 42px;
+}
+
+.messages {
+	background-color: #000080;
+	color: white;
+	width: 570px;
+	font: bold .875em Calibri, Arial;
+}
+
+.messages a {
+	text-decoration: none;
+}
+
+.messages a:hover {
+	background-color: #990000;
+}
+
+.messages a:link {
+	color: yellow;
+}
+
+.messages a:visited {
+	color: #00ff66;
+}
+
+div.kreisg {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: grey;
+	margin: 10px;
+	counter-decrement: number -1;
+}
+
+div.kreis {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #000080;
+	margin: 10px;
+	counter-increment: number -1;
+}
+
+div.kreisT {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #c0c0c0;
+	margin: 10px;
+	counter-increment: number -1;
+}
+
+div.kreis::after {
+	content: counter(number);
+	position: relative;
+	color: white;
+	width: 100%;
+	text-align: center;
+	top: 43px;
+	left: 43px;
+}
+div.kreisT::after {
+	content: counter(number);
+	position: relative;
+	color: white;
+	width: 100%;
+	text-align: center;
+	top: 43px;
+	left: 43px;
+}
+
+
+.containerdivNewLine {
+	clear: both;
+	float: left;
+	display: block;
+	position: relative;
+}
+
+div.ovalr {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #990000;
+	margin: 5px;
+	float: left;
+}
+
+div.ovalg {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: green;
+	margin: 5px;
+	float: left;
+}
+
+body {
+	padding: 100 px, 100 px, 100px, 100 px;
+	margin: 100 px, 100 px, 100px, 100 px;
+/*	counter-reset: number 12 */
+}
+
+.red {
+	display: inline;
+	color: #990000;
+}
+.yellow {
+	display: inline;
+	color: yellow;
+}
+
+.darkblue {
+	display: inline;
+	color: darkblue;
+}
+
+td {
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+}
+
+.ms {
+	position: absolute; !
+	margin: 1cm; !
+	background-color: #99FF99;
+	width: 200px;
+	border: 0px solid; !
+	margin: 0px 0px 0px 0px;
+	top: 20px;
+	left: 600;
+}
+.kreisT a {
+	text-decoration: none;
+}
+
+.kreisT a:hover {
+	background-color: white;
+}
+
+.kreisT a:link {
+	color: white;
+}
+.show a:visited {
+	color: white;
+}
+.show a {
+	text-decoration: none;
+}
+
+.show a:hover {
+	background-color: white;
+}
+
+.show a:link {
+	color: white;
+}
+
+.show a:visited {
+	color: white;
+}
