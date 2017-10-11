@@ -1,3 +1,5 @@
+var timer=null;
+
 function FensterOeffnen (Adresse) { 
 MeinFenster = window.open(Adresse, "Zweitfenster", "width=300,height=100,left=10,top=10,menubar=no,location=no,resizeable=no" ); 
 //MeinFenster.document.write("<p>ein neues Fenster!<br>(Besser wÃ¤re aber eine dialog-Box!)</p>"); 

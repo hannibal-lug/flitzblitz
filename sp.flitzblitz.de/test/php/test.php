@@ -8,7 +8,7 @@
 </head>
 <body class="test-data">
 <table cellspacing="0" cellpadding="0" border="0">
-<tr class="subhead" align="Left"><th>Name</th><th>Value</th></tr>
+<tr class="subhead" align="left"><th>Name</th><th>Value</th></tr>
 <?php $class = 'normal'; ?>
 <tr class="<?php echo htmlspecialchars($class) ?>"><td>PHP_VERSION</td><td><?php echo htmlspecialchars(PHP_VERSION) ?></td></tr>
 <?php $VARS = isset($_SERVER)? $_SERVER: (isset($HTTP_SERVER_VARS)? $HTTP_SERVER_VARS: array()); ?>
