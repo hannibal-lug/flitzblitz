@@ -22,8 +22,9 @@ if (!$location) {
 ?>
 
 <html lang="de" dir="ltr" class="redesign no-js" data-ffo-opensans="false" data-ffo-opensanslight="false">
+<title>status get</title>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../css3clock.css" />
 <link rel="stylesheet" type="text/css" href="trainer.css" />
 <script src="trainer.js"></script>
@@ -36,11 +37,8 @@ if (!$location) {
 <body bgcolor=grey onload="timer = setTimeout(refresh, 30000);">
 -->
 <body bgcolor=grey>
-<title>status get</title>
-<font face=arial color=white>
-<basefont face=arial color=white>
-
 <h1>Trainer-Seite</h1>
+
 <?php
 $sth = $dbh->prepare('SELECT `name` FROM `rooms` WHERE `number` = :location');
 $sth->execute(array('location' => $location));
@@ -103,12 +101,12 @@ $found_students = $result ? $result->num_rows :'';
 */
 ?>
 
-&Uuml;bersicht-Seite Trainer, zum aktualisieren bitte hier 
+Übersicht-Seite Trainer, zum aktualisieren bitte hier 
 <a href=status.php !onclick="document.location.reload(); return false">klicken 
 <img src=../img/icons/reload.gif width=100 align=middle style="position:absolute; top:45px"></a><br style="clear:both">
 
 (Seite wird alle 30 automatisch aktualisiert),
-<br>zur&uuml;ck zur <a href=/>Startseite <img src=../img/icons/home.gif width=100 align=middle></a>
+<br>zurück zur <a href=/>Startseite <img src=../img/icons/home.gif width=100 align=middle></a>
 <br>
 <br>
 Zur Zeit 
@@ -234,7 +232,7 @@ while($row = mysqli_fetch_assoc($result)) {
 <input type=hidden name=action value=message />
 <input type="submit" name="sendMessage" value="Neue Textnachricht schreiben" 
 	id="SendMessage" onclick="SubmitMessage ();ShowReceiver();return false" />
-<!-- css-Counter zur�cksetzen -->
+<!-- css-Counter zurücksetzen -->
 <div class=cmod></div>
 <!--  kleine Sitzordnung f�r Chatmessage einblenden -->
 <table width=400 height=300 border=1 id="SendTo" class=tableTo>
@@ -281,7 +279,7 @@ if ($result) {
 <div class=messages id=MessageBlock>
 <?php 
 /*
-// Empf�nger_ID aus DB auslesen
+// Empfänger_ID aus DB auslesen
 $sql = "SELECT `student_id` FROM `states` WHERE `seat` = $senderId ORDER BY `seat` DESC";
 $result = $conn->query($sql);
 if (isset($result) and $result->num_rows > 0) {
@@ -336,7 +334,7 @@ if ($result) {
 <div id=tools>
 <!--
 <form name=classroom_list>
-Bitte Klassenzimmer ausw&auml;hlen:<br>
+Bitte Klassenzimmer auswählen:<br>
 
 <select id=classs name=classrooms !onchange="getValue();"> 
 <optgroup label="Klassenzimmer EG">

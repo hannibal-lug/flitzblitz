@@ -99,6 +99,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="trainer.css">
+		<meta charset="UTF-8">
 	</head>
 	<body>
 <?php
@@ -126,11 +127,11 @@
 			Beschreibung
 			<textarea class="inputbox" form="add_exercise" name="exercise_description">
 			</textarea>
-			<button type="submit" form="add_exercise" name="action" value="add_exercise">&Uuml;bung anlegen</button>
+			<button type="submit" form="add_exercise" name="action" value="add_exercise">Übung anlegen</button>
 		</form>
 ADDEX;
 		}
 ?>
-		<p>Zur�ck zu <a href="status.php">Status</a>.</p>
+		<p>zurück zum <a href="status.php">Status</a>.</p>
 	</body>
 </html>
